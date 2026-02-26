@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Retail Ordering Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>🍕 Retail Ordering Website</h1>
+  <p>Browse • Order • Receive Seamlessly</p>
+</header>
+
+<nav>
+  <button onclick="filterMenu('all')">All</button>
+  <button onclick="filterMenu('pizza')">Pizza</button>
+  <button onclick="filterMenu('drink')">Cold Drinks</button>
+  <button onclick="filterMenu('bread')">Breads</button>
+</nav>
+
+<main>
+  <section id="menu" class="menu"></section>
+
+  <section class="cart">
+    <h2>🛒 Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3 id="total">Total: ₹0</h3>
+    <button onclick="placeOrder()">Place Order</button>
+  </section>
+</main>
+
+<footer>
+  <p>Secure APIs • REST Ready • GitHub Maintained</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
